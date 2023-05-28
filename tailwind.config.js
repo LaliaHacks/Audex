@@ -4,7 +4,22 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Raleway', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+      },
+      colors: {
+        primary: '#FB2576',
+        secondary: '#2F58CD',
+      },
+      textColor: {
+        'default': '#ffffff',
+      },
+      backgroundColor: {
+        'default': '#080808',
+      },
+    },
   },
   plugins: [],
 }
