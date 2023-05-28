@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
 import placeholder from '../public/placeholder.jpg';
+import Link from 'next/link';
 
 export default function Generate() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -26,8 +27,14 @@ export default function Generate() {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="border-2 w-full p-4">Fake Navbar</div>
-      <div className="flex flex-col justify-items-center w-full sm:w-3/5">
+      <header className="flex flex-row justify-between fixed top-0 z-50 w-full p-4 sm:p-8 border-2 bg-[#080808]">
+        <Image className='ml-4 w-24 sm:w-32 object-contain' alt="Audex Logo" src="/mainLogo.png" width={140} height={50} />
+        <div className='flex flex-row gap-5 sm:gap-20 mr-2 sm:mr-40'>
+          <Link block color='error' href="#first-section">Home</Link>
+          <Link block color='error' href="#second-section">Try Audex</Link>
+        </div>
+      </header>
+      <div className="flex flex-col justify-items-center w-full sm:w-3/5 mt-24">
         <div className="flex flex-col border-2 m-4 p-8">
           <div className="text-3xl font-medium pb-8">
             Maximize Your Productivity
