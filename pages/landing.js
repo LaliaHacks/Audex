@@ -16,10 +16,8 @@ export default function Landing() {
         <Navbar.Brand className="bg-black">
             <Image alt="Audex Logo" src="/Audex_logo.png" width={80} height={40} />
         </Navbar.Brand>
-
       </Navbar>
         <div className="place-content-center">
-        <Image alt="Audex Logo" src="/Audex_logo.png" width={400} height={200} className="max-w-3xl h-auto" />
         </div>
         <h1 className="bg-blue-400 text-3xl">
           Welcome to <a href="https://nextjs.org">Audex!</a>
