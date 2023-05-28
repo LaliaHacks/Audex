@@ -12,6 +12,18 @@ export default function Home() {
         <h1 className="bg-blue-300 border-4">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+        <div className="border-4 font-sans text-text bg-background">
+          xperimentalWarning: The Fetch API is an experimental feature. This feature could change at any time word
+        </div>
+        <div className="border-4 text-primary">
+          xperimentalWarning: The Fetch API is an experimental feature. This feature could change at any time
+        </div>
+        <div className="border-4 text-secondary">
+          xperimentalWarning: The Fetch API is an experimental feature. This feature could change at any time
+        </div>
+        <div className="border-4 font-inter">
+          xperimentalWarning: The Fetch API is an experimental feature. This feature could change at any time word
+        </div>
       </main>
 
       <footer>
