@@ -57,7 +57,26 @@ export default function Generate() {
 
   return (
     <div className="flex flex-col items-center">
-      <Navbar />
+      <header className="flex flex-row justify-between fixed top-0 z-50 w-full p-4 sm:p-8 bg-[#080808]">
+        <Link href="/landing">
+          <Image
+              className="ml-4 w-24 sm:w-32 object-contain"
+              alt="Audex Logo"
+              src="/mainLogo.png"
+              width={140}
+              height={50}
+          />
+        </Link>    
+        
+        <div className="flex flex-row gap-5 sm:gap-20 mr-2 sm:mr-40">
+          <Link href="/landing" className='hover:text-primary'>
+            Home
+          </Link>
+          <Link href="/generate" className='hover:text-primary'>
+            Try Audex
+          </Link>
+        </div>
+      </header>
       <div className="flex flex-col justify-items-center w-full sm:w-3/5 mt-24">
         <div className="flex flex-col border-2 m-4 p-8">
           <div className="text-3xl font-medium pb-8">
@@ -67,7 +86,7 @@ export default function Generate() {
             This is just some sample text lorem ipsum stuff
           </div>
         </div>
-        <div className="flex flex-col border-2 m-4 p-6 items-center">
+        <div className="flex flex-col m-4 p-6 items-center">
             <div className="mt-4 flex justify-center items-center">
                 {!isLoading && selectedImage && (
                     <div className="flex justify-center items-center">
@@ -109,7 +128,7 @@ export default function Generate() {
                     type="file"
                     accept="image/*"
                     onChange={handleImageUpload}
-                    className='w-full sm:w-1/2'
+                    className='w-full sm:w-10/12'
                 />
                 {/* <div className='w-px h-8 border-2'></div>
 
