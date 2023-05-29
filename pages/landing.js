@@ -1,9 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from "@nextui-org/react";
-import Navbar from '../components/navbar';
-
 
 export default function Landing() {
   return (
@@ -14,20 +11,29 @@ export default function Landing() {
       </Head>
 
       <main className='flex flex-col items-center'>
-      {/* <Navbar isBordered shouldHideOnScroll={false} activeColor="primary" value="primary" css={{
-        $$navbarBackgroundColor: "transparent",
-        $$navbarBlurBackgroundColor: "transparent",
-      }}>
-        <Navbar.Brand>
-            <Image alt="Audex Logo" src="/mainLogo.png" width={140} height={50} />
-        </Navbar.Brand>
-        <Link block color='error' href="#first-section">Home</Link>
-        <Link block color='error' href="#second-section">Try Audex</Link>
-      </Navbar> */}
+      
+      <header className="flex flex-row justify-between fixed top-0 z-50 w-full p-4 sm:p-8 bg-[#080808]">
+        <Link href="/landing">
+          <Image
+              className="ml-4 w-24 sm:w-32 object-contain"
+              alt="Audex Logo"
+              src="/mainLogo.png"
+              width={140}
+              height={50}
+          />
+        </Link>    
+        
+        <div className="flex flex-row gap-5 sm:gap-20 mr-2 sm:mr-40">
+          <Link href="/landing" className='hover:text-primary'>
+            Home
+          </Link>
+          <Link href="/generate" className='hover:text-primary'>
+            Try Audex
+          </Link>
+        </div>
+      </header>
 
-      <Navbar/>
-
-      <div className='flex flex-col justify-items-center w-full sm:w-3/5'>
+      <div className='flex flex-col justify-items-center w-full sm:w-3/5 mt-24'>
         <div className='grid place-content-center py-40'>
           <Image alt="Audex Logo" src="/mainLogo.png" width={300} height={150} className='max-w-screen-lg'/>
         </div>
@@ -61,8 +67,8 @@ export default function Landing() {
         {/* <div className='grid place-content-center py-10'>
           <Button size='xl' shadow color={'gradient'} className='text-2xl'>Try it Now!</Button>
         </div> */}
-        <div className='grid place-content-center py-8'>
-          <Link href="/generate" className='inline-block px-6 py-3 m-16 rounded-full border-2 border-primary text-center tracking-wider text-sm'>
+        <div className='grid place-content-center py-10'>
+          <Link href="/generate" className='inline-block px-6 py-3 m-16 rounded-full border-2 border-primary hover:border-secondary text-center tracking-wider text-base sm:text-lg'>
             GET STARTED FOR FREE
           </Link>
         </div>
