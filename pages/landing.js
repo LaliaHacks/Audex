@@ -37,40 +37,32 @@ export default function Landing() {
         <div className='grid place-content-center py-40'>
           <Image alt="Audex Logo" src="/mainLogo.png" width={300} height={150} className='max-w-screen-lg'/>
         </div>
-        <div className="place-content-center pt-10 p-6" id="first-section">
-          <h1 className=" text-2xl">
-            What is Audex?
-          </h1>
-          <ul className=" text-sm list-disc pt-2 pl-8">
-            <li>Audex(Audio Experience) is a web app designed to enable users to enjoy a hyper immersive travel experience from anywhere in the world</li>
-            <li>Audex provides users with a captivating audio experience to accompany the sights they come across on their trip</li>
-            <li>The audio experience has 2 components:</li>
-              <ul className='list-decimal pl-10'>
-                <li>A detailed and enthralling description generated in real time by some of the world’s most advanced large language models (LLMs)</li>
-                <li>A factual component that shares interesting facts about the location. These could be historical, geographical or just general fun facts</li>
-              </ul>
+
+        <div className="place-content-center pt-10 p-6">
+          <h1 className=" text-2xl font-bold">Welcome to Audex: Revolutionizing Travel Experiences</h1>
+          <p className="pt-4 text-justify">Experience the world like never before with Audex (Audio Experience), a groundbreaking web app that transports you on a hyper-immersive journey from anywhere in the world. Audex is designed to enhance your travel adventures by providing a captivating audio experience that accompanies the sights you encounter along the way.</p>
+
+          <h1 className=" pt-10 text-2xl font-bold">Immersive Audio Delivered in Two Components</h1>
+          <p className="pt-4 text-justify">Audex offers a truly unique audio experience that consists of two components, meticulously crafted to provide an unforgettable journey:</p>
+          <ul className=" text-sm list-decimal pt-2 pl-8">
+            <li className='font-bold'>Real-Time Descriptions by Advanced Language Models:</li>
+            <p className="text-justify" >Prepare to be enthralled as Audex generates detailed and enthralling descriptions in real time, utilizing some of the world's most advanced large language models (LLMs). These cutting-edge models ensure that every description is vivid, engaging, and tailored to the specific location, enriching your travel experience like never before.</p>
+            <li className='font-bold'>Fascinating Factual Insights:</li>
+            <p className='text-justify'>In addition to the immersive descriptions, Audex also provides a factual component that shares intriguing facts about the location you're exploring. These facts could encompass historical significance, geographical wonders, or simply fun trivia, deepening your understanding and appreciation of each destination.</p>
           </ul>
-        </div>
-        <div className="place-content-center pt-8 p-6" id="second-section">
-          <h1 className=" text-2xl">
-            Who is Audex for?
-          </h1>
-          <ul className=" text-sm list-disc pt-2 pl-8">
-            <li>Audex was built for the traveller who wishes to maximise their trip by experiencing sights and adventures in multiple ways</li>
-            <li>The Audex user interface is also designed to be minimal and simple, in order to assist the visually impaired community who we believe will benefit the most from our product</li>
-            <li>The audio experience has 2 components:</li>
+
+          <h1 className=" pt-10 text-2xl font-bold">Who Can Benefit from Audex?</h1>
+          <p className='pt-4 text-justify'>Audex was created with a vision to amplify the experiences of all travelers, and we're particularly dedicated to supporting the visually impaired community. Our user interface has been thoughtfully designed to be minimalistic and user-friendly, ensuring easy navigation and a seamless experience for everyone. We believe that Audex can truly enrich the adventures of those seeking multi-dimensional travel experiences.</p>
+
+          <h1 className=" pt-10 text-2xl font-bold">How to Harness the Power of Audex?</h1>
+          <p className='pt-4 text-justify' >Getting started with Audex is a breeze! Follow these simple steps to embark on your extraordinary audio journey:</p>
+          <ul className="text-justify text-sm list-decimal py-2 pl-8">
+            <li>Click on the "GET STARTED" button below, granting you access to Audex's transformative features.</li>
+            <li>Upload an existing image from your device and let Audex breathe life into it.</li>
+            <li>Sit back and relax as Audex works its magic, utilizing advanced algorithms to generate a detailed description tailored to your chosen image.</li>
+            <li>Once Audex completes the generation process, press play and allow the audio description to transport you to a world of wonder, painting vivid pictures with words.</li>
           </ul>
-        </div>
-        <div className="place-content-center pt-8 p-6" id="third-section">
-          <h1 className=" text-2xl">
-            How do I use Audex?
-          </h1>
-          <ul className="text-sm list-decimal pt-2 pl-8">
-            <li>Click on the “Try it now” button below to access Audex</li>
-            <li>Upload an existing image from your device OR Take a photo from your device’s camera and upload it to Audex</li>
-            <li>Wait for Audex to generate a description</li>
-            <li>Press play to listen to the description once its ready!</li>
-          </ul>
+          <p className='text-justify'>Discover a new way to experience the world with Audex. Unleash the power of your imagination and indulge in captivating audio journeys, ensuring that every trip is a truly unforgettable adventure. Try Audex today and embark on a limitless exploration of sights, sounds, and stories.</p>
         </div>
         {/* <div className='grid place-content-center py-10'>
           <Button size='xl' shadow color={'gradient'} className='text-2xl'>Try it Now!</Button>
