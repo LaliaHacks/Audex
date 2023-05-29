@@ -3,10 +3,23 @@ import Image from 'next/image';
 import Head from 'next/head';
 import placeholder from '../public/placeholder.jpg';
 import Link from 'next/link';
+import Navbar from '../components/navbar';
+import axios from 'axios';
+
+async function callAPI(text) {
+  try {
+      const response = await axios.post('./api/custom_endpoint', { text });
+      console.log(response.data);
+  } catch (error) {
+      console.error(error);
+  }
+}
 
 export default function Generate() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [audioUrl, setAudioUrl] = useState('');
+  const audioRef = useRef();
 
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
@@ -21,6 +34,30 @@ export default function Generate() {
     };
     reader.readAsDataURL(file);
   };
+
+  const handleAudioButton = () => {
+    const inputText = document.getElementById("generatedText").textContent;
+    callAPI(inputText);
+    // const blob = callAPI(inputText);
+    // try {
+    //     const audioUrl = window.URL.createObjectURL(blob);
+    //     const audio = new Audio(audioUrl);
+    //     audio.play();
+    // } catch (error) {
+    //     console.error(error);
+    // }
+  };
+  const play = () => {
+    console.log("hello")
+    if (audioRef.current) {
+      audioRef.current.play();
+      console.log("it should be playing")
+    } else {
+      // Throw error
+    }
+    // const audioFile = '/media/output.mp3';
+    // setAudioUrl(audioFile);
+  }
 
   return (
     <div>
@@ -111,6 +148,20 @@ export default function Generate() {
             
           </div>
           <div className="flex flex-col border-2 m-4 p-8">Others</div>
+        </div>
+        <div className="flex flex-col border-2 m-4 p-8">
+            <div id="generatedText">
+                It changed again, oh my god!
+            </div>
+          <button onClick={handleAudioButton}>Convert to Speech</button>
+          <audio ref={audioRef} src='/media/output.mp3'/>
+            {/* {audioUrl && (
+            <audio controls>
+              <source src={audioUrl} type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          )} */}
+          <button onClick={play}>Play</button>
         </div>
       </div>
     </div>
