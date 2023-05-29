@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Button } from "@nextui-org/react";
 import Navbar from '../components/navbar';
 
@@ -31,10 +32,10 @@ export default function Landing() {
           <Image alt="Audex Logo" src="/mainLogo.png" width={300} height={150} className='max-w-screen-lg'/>
         </div>
         <div className="place-content-center pt-10 p-6" id="first-section">
-          <h1 className=" text-3xl">
+          <h1 className=" text-2xl">
             What is Audex?
           </h1>
-          <ul className=" text-md list-disc pt-2 pl-8">
+          <ul className=" text-sm list-disc pt-2 pl-8">
             <li>Audex(Audio Experience) is a web app designed to enable users to enjoy a hyper immersive travel experience from anywhere in the world</li>
             <li>Audex provides users with a captivating audio experience to accompany the sights they come across on their trip</li>
             <li>The audio experience has 2 components:</li>
@@ -45,28 +46,33 @@ export default function Landing() {
           </ul>
         </div>
         <div className="place-content-center pt-8 p-6" id="second-section">
-          <h1 className=" text-3xl">
+          <h1 className=" text-2xl">
             Who is Audex for?
           </h1>
-          <ul className=" text-md list-disc pt-2 pl-8">
+          <ul className=" text-sm list-disc pt-2 pl-8">
             <li>Audex was built for the traveller who wishes to maximise their trip by experiencing sights and adventures in multiple ways</li>
             <li>The Audex user interface is also designed to be minimal and simple, in order to assist the visually impaired community who we believe will benefit the most from our product</li>
             <li>The audio experience has 2 components:</li>
           </ul>
         </div>
         <div className="place-content-center pt-8 p-6" id="third-section">
-          <h1 className=" text-3xl">
+          <h1 className=" text-2xl">
             How do I use Audex?
           </h1>
-          <ul className="text-md list-decimal pt-2 pl-8">
+          <ul className="text-sm list-decimal pt-2 pl-8">
             <li>Click on the “Try it now” button below to access Audex</li>
             <li>Upload an existing image from your device OR Take a photo from your device’s camera and upload it to Audex</li>
             <li>Wait for Audex to generate a description</li>
             <li>Press play to listen to the description once its ready!</li>
           </ul>
         </div>
-        <div className='grid place-content-center py-10'>
+        {/* <div className='grid place-content-center py-10'>
           <Button size='xl' shadow color={'gradient'} className='text-2xl'>Try it Now!</Button>
+        </div> */}
+        <div className='grid place-content-center py-10'>
+          <Link href="/generate" className='inline-block px-6 py-3 m-16 rounded-full border-2 border-primary text-center tracking-wider text-sm'>
+            GET STARTED FOR FREE
+          </Link>
         </div>
       </div>
       
