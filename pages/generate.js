@@ -56,7 +56,7 @@ export default function Generate() {
             This is just some sample text lorem ipsum stuff
           </div>
         </div>
-        <div className="flex flex-col border-2 m-4 p-6 items-center">
+        <div className="flex flex-col m-4 p-6 items-center">
             <div className="mt-4 flex justify-center items-center">
                 {!isLoading && selectedImage && (
                     <div className="flex justify-center items-center">
@@ -98,7 +98,7 @@ export default function Generate() {
                     type="file"
                     accept="image/*"
                     onChange={handleImageUpload}
-                    className='w-full sm:w-1/2'
+                    className='w-full sm:w-10/12'
                 />
                 {/* <div className='w-px h-8 border-2'></div>
 
