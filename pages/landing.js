@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Navbar, Button } from "@nextui-org/react";
-import Link from 'next/link';
+import { Button } from "@nextui-org/react";
+import Navbar from '../components/navbar';
 
 
 export default function Landing() {
@@ -24,13 +24,7 @@ export default function Landing() {
         <Link block color='error' href="#second-section">Try Audex</Link>
       </Navbar> */}
 
-      <header className="flex flex-row justify-between fixed top-0 z-50 w-full p-4 sm:p-8 border-2 bg-[#080808]">
-        <Image className='ml-4 w-24 sm:w-32 object-contain' alt="Audex Logo" src="/mainLogo.png" width={140} height={50} />
-        <div className='flex flex-row gap-5 sm:gap-20 mr-2 sm:mr-40'>
-          <Link block color='error' href="#first-section">Home</Link>
-          <Link block color='error' href="#second-section">Try Audex</Link>
-        </div>
-      </header>
+      <Navbar />
 
       <div className='flex flex-col justify-items-center w-full sm:w-3/5'>
         <div className='grid place-content-center py-40'>
