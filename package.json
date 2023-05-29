@@ -6,12 +6,13 @@
     "start": "next start"
   },
   "dependencies": {
-    "@nextui-org/react": "^1.0.0-beta.13",
     "@next/font": "^13.4.4",
+    "@nextui-org/react": "^1.0.0-beta.13",
     "next": "latest",
     "next-images": "^1.8.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "replicate": "^0.12.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

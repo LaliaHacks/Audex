@@ -6,8 +6,8 @@ export default function Landing() {
   return (
     <div>
       <Head>
-        <title>Audex Guide</title>
-        <link rel="icon" href="/Audex_icon-modified.png" />
+        <title>Audex</title>
+        <link rel="icon" href="/mainIcon.png" />
       </Head>
 
       <main className='flex flex-col items-center'>
@@ -23,18 +23,18 @@ export default function Landing() {
           />
         </Link>    
         
-        <div className="flex flex-row gap-5 sm:gap-20 mr-2 sm:mr-40">
+        <div className="flex flex-row gap-5 sm:gap-20 mr-2 sm:mr-40 items-center">
           <Link href="/landing" className='hover:text-primary'>
             Home
           </Link>
-          <Link href="/generate" className='hover:text-primary'>
+          <Link href="/generate" className='hover:border-secondary border-primary border-2 rounded-3xl px-4 py-1 align-middle'>
             Try Audex
           </Link>
         </div>
       </header>
 
       <div className='flex flex-col justify-items-center w-full sm:w-3/5 mt-24'>
-        <div className='grid place-content-center py-40'>
+        <div className="grid place-content-center py-40">
           <Image alt="Audex Logo" src="/mainLogo.png" width={300} height={150} className='max-w-screen-lg'/>
         </div>
 
@@ -72,6 +72,7 @@ export default function Landing() {
             GET STARTED FOR FREE
           </Link>
         </div>
+        <div className="grid place-content-center h-80 bg-[url('../public/background.png')] bg-cover"></div>
       </div>
       
       </main>
