@@ -39,22 +39,22 @@ export default function Landing() {
         </div>
 
         <div className="place-content-center pt-10 p-6">
-          <h1 className=" text-2xl font-bold">Welcome to Audex: Revolutionizing Travel Experiences</h1>
+          <h1 className=" text-2xl font-medium">Welcome to Audex: Revolutionizing Travel Experiences</h1>
           <p className="pt-4 text-justify">Experience the world like never before with Audex (Audio Experience), a groundbreaking web app that transports you on a hyper-immersive journey from anywhere in the world. Audex is designed to enhance your travel adventures by providing a captivating audio experience that accompanies the sights you encounter along the way.</p>
 
-          <h1 className=" pt-10 text-2xl font-bold">Immersive Audio Delivered in Two Components</h1>
+          <h1 className=" pt-10 text-2xl font-medium">Immersive Audio Delivered in Two Components</h1>
           <p className="pt-4 text-justify">Audex offers a truly unique audio experience that consists of two components, meticulously crafted to provide an unforgettable journey:</p>
           <ul className=" text-sm list-decimal pt-2 pl-8">
-            <li className='font-bold'>Real-Time Descriptions by Advanced Language Models:</li>
+            <li className='font-medium'>Real-Time Descriptions by Advanced Language Models:</li>
             <p className="text-justify" >Prepare to be enthralled as Audex generates detailed and enthralling descriptions in real time, utilizing some of the world's most advanced large language models (LLMs). These cutting-edge models ensure that every description is vivid, engaging, and tailored to the specific location, enriching your travel experience like never before.</p>
-            <li className='font-bold'>Fascinating Factual Insights:</li>
+            <li className='font-medium'>Fascinating Factual Insights:</li>
             <p className='text-justify'>In addition to the immersive descriptions, Audex also provides a factual component that shares intriguing facts about the location you're exploring. These facts could encompass historical significance, geographical wonders, or simply fun trivia, deepening your understanding and appreciation of each destination.</p>
           </ul>
 
-          <h1 className=" pt-10 text-2xl font-bold">Who Can Benefit from Audex?</h1>
+          <h1 className=" pt-10 text-2xl font-medium">Who Can Benefit from Audex?</h1>
           <p className='pt-4 text-justify'>Audex was created with a vision to amplify the experiences of all travelers, and we're particularly dedicated to supporting the visually impaired community. Our user interface has been thoughtfully designed to be minimalistic and user-friendly, ensuring easy navigation and a seamless experience for everyone. We believe that Audex can truly enrich the adventures of those seeking multi-dimensional travel experiences.</p>
 
-          <h1 className=" pt-10 text-2xl font-bold">How to Harness the Power of Audex?</h1>
+          <h1 className=" pt-10 text-2xl font-medium">How to Harness the Power of Audex?</h1>
           <p className='pt-4 text-justify' >Getting started with Audex is a breeze! Follow these simple steps to embark on your extraordinary audio journey:</p>
           <ul className="text-justify text-sm list-decimal py-2 pl-8">
             <li>Click on the "GET STARTED" button below, granting you access to Audex's transformative features.</li>
