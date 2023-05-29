@@ -33,7 +33,7 @@ export default function Landing() {
         </div>
       </header>
 
-      <div className='flex flex-col justify-items-center w-full sm:w-3/5'>
+      <div className='flex flex-col justify-items-center w-full sm:w-3/5 mt-24'>
         <div className='grid place-content-center py-40'>
           <Image alt="Audex Logo" src="/mainLogo.png" width={300} height={150} className='max-w-screen-lg'/>
         </div>
