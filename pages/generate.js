@@ -27,7 +27,7 @@ export default function Generate() {
 
   return (
     <div className="flex flex-col items-center">
-      <header className="flex flex-row justify-between fixed top-0 z-50 w-full p-4 sm:p-8 border-2 bg-[#080808]">
+      <header className="flex flex-row justify-between fixed top-0 z-50 w-full p-4 sm:p-8 bg-[#080808]">
         <Link href="/landing">
           <Image
               className="ml-4 w-24 sm:w-32 object-contain"
@@ -39,10 +39,10 @@ export default function Generate() {
         </Link>    
         
         <div className="flex flex-row gap-5 sm:gap-20 mr-2 sm:mr-40">
-          <Link block color="error" href="/landing">
+          <Link href="/landing" className='hover:text-primary'>
             Home
           </Link>
-          <Link block color="error" href="/generate">
+          <Link href="/generate" className='hover:text-primary'>
             Try Audex
           </Link>
         </div>
