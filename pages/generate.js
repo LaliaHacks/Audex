@@ -2,10 +2,26 @@ import { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
 import placeholder from '../public/placeholder.jpg';
 import Link from 'next/link';
+import Navbar from '../components/navbar';
+import axios from 'axios';
+
+async function callAPI(text) {
+  try {
+      const response = await axios.post('./api/custom_endpoint', { text });
+      // const blob = new Blob([response.data], { type: 'audio/mpeg' });
+      console.log(response.data);
+      // Handle the response data as needed
+      // return blob
+  } catch (error) {
+      console.error(error);
+      // Handle errors if any
+  }
+}
 
 export default function Generate() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [audioUrl, setAudioUrl] = useState('');
 
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
@@ -23,6 +39,20 @@ export default function Generate() {
 
   const handleCameraCapture = async () => {
     
+  };
+
+
+  const handleAudioButton = () => {
+    const inputText = document.getElementById("generatedText").textContent;
+    callAPI(inputText);
+    // const blob = callAPI(inputText);
+    // try {
+    //     const audioUrl = window.URL.createObjectURL(blob);
+    //     const audio = new Audio(audioUrl);
+    //     audio.play();
+    // } catch (error) {
+    //     console.error(error);
+    // }
   };
 
   return (
@@ -107,7 +137,18 @@ export default function Generate() {
           
           
         </div>
-        <div className="flex flex-col border-2 m-4 p-8">Others</div>
+        <div className="flex flex-col border-2 m-4 p-8">
+            <div id="generatedText">
+                This is a test, please do not be alarmed.
+            </div>
+          <button onClick={handleAudioButton}>Convert to Speech</button>
+            {/* {audioUrl && (
+              <audio controls>
+                <source src={audioUrl} type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            )} */}
+        </div>
       </div>
     </div>
   );
