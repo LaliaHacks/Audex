@@ -14,7 +14,7 @@ const Navbar = () => {
         />
       </Link>    
       
-      <div className="flex flex-row gap-5 sm:gap-20 mr-2 sm:mr-40">
+      <div className="font-medium text-2xl flex flex-row gap-5 sm:gap-20 mr-2 sm:mr-40">
         <Link block color="error" href="/landing">
           Home
         </Link>

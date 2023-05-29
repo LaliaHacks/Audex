@@ -25,14 +25,14 @@ export default function Landing() {
         <Link block color='error' href="#second-section">Try Audex</Link>
       </Navbar> */}
 
-      <Navbar />
+      <Navbar/>
 
       <div className='flex flex-col justify-items-center w-full sm:w-3/5'>
         <div className='grid place-content-center py-40'>
           <Image alt="Audex Logo" src="/mainLogo.png" width={300} height={150} className='max-w-screen-lg'/>
         </div>
         <div className="place-content-center pt-10 p-6" id="first-section">
-          <h1 className=" text-2xl">
+          <h1 className=" text-2xl font-bold">
             What is Audex?
           </h1>
           <ul className=" text-sm list-disc pt-2 pl-8">
@@ -46,7 +46,7 @@ export default function Landing() {
           </ul>
         </div>
         <div className="place-content-center pt-8 p-6" id="second-section">
-          <h1 className=" text-2xl">
+          <h1 className=" text-2xl font-bold">
             Who is Audex for?
           </h1>
           <ul className=" text-sm list-disc pt-2 pl-8">
@@ -56,7 +56,7 @@ export default function Landing() {
           </ul>
         </div>
         <div className="place-content-center pt-8 p-6" id="third-section">
-          <h1 className=" text-2xl">
+          <h1 className=" text-2xl font-bold">
             How do I use Audex?
           </h1>
           <ul className="text-sm list-decimal pt-2 pl-8">
