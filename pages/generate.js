@@ -8,13 +8,9 @@ import axios from 'axios';
 async function callAPI(text) {
   try {
       const response = await axios.post('./api/custom_endpoint', { text });
-      // const blob = new Blob([response.data], { type: 'audio/mpeg' });
       console.log(response.data);
-      // Handle the response data as needed
-      // return blob
   } catch (error) {
       console.error(error);
-      // Handle errors if any
   }
 }
 
@@ -22,6 +18,7 @@ export default function Generate() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [audioUrl, setAudioUrl] = useState('');
+  const audioRef = useRef();
 
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
@@ -54,6 +51,17 @@ export default function Generate() {
     //     console.error(error);
     // }
   };
+  const play = () => {
+    console.log("hello")
+    if (audioRef.current) {
+      audioRef.current.play();
+      console.log("it should be playing")
+    } else {
+      // Throw error
+    }
+    // const audioFile = '/media/output.mp3';
+    // setAudioUrl(audioFile);
+  }
 
   return (
     <div className="flex flex-col items-center">
@@ -139,15 +147,17 @@ export default function Generate() {
         </div>
         <div className="flex flex-col border-2 m-4 p-8">
             <div id="generatedText">
-                This is a test, please do not be alarmed.
+                It changed again, oh my god!
             </div>
           <button onClick={handleAudioButton}>Convert to Speech</button>
+          <audio ref={audioRef} src='/media/output.mp3'/>
             {/* {audioUrl && (
-              <audio controls>
-                <source src={audioUrl} type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
-            )} */}
+            <audio controls>
+              <source src={audioUrl} type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          )} */}
+          <button onClick={play}>Play</button>
         </div>
       </div>
     </div>

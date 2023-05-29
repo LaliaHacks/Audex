@@ -29,7 +29,7 @@ module.exports = {
 
 
         const writeFile = util.promisify(fs.writeFile);
-        await writeFile("media/output.mp3", response.audioContent, "binary");
+        await writeFile("public/media/output.mp3", response.audioContent, "binary");
 
         console.log("Audio file has been successfully generated");
         // return response;
