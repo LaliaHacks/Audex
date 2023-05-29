@@ -1,3 +1,4 @@
+import Navbar from '../components/navbar';
 import Head from 'next/head';
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       </Head>
 
       <main>
+        <Navbar />
         <h1 className="bg-blue-300 border-4">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
