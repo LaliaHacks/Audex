@@ -1,7 +1,7 @@
 @tailwind base;
 @layer base {
   html {
-    @apply text-white;
+    @apply text-[#E0E0E0];
     @apply bg-[#080808];
   }
 }
