@@ -17,20 +17,39 @@ async function callAPI(text) {
 
 export default function Generate() {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [description, setDescription] = useState('placeholder');
   const [isLoading, setIsLoading] = useState(false);
   const [audioUrl, setAudioUrl] = useState('');
   const audioRef = useRef();
 
-  const handleImageUpload = (e) => {
+  const handleImageUpload = async (e) => {
     const file = e.target.files[0];
     const reader = new FileReader();
-    reader.onload = () => {
+    reader.onload = async () => {
       setIsLoading(true);
-      setTimeout(() => {
+      try {
+        setTimeout(() => {
+          setIsLoading(false);
+        }, 1000); // 1 second delay
+        const imageDataUrl = reader.result;
+        setSelectedImage(imageDataUrl);
+  
+        // Create form data and append the uploaded image file
+        const formData = new FormData();
+        formData.append('image', file);
+  
+        // Make a request to your backend server to process the image and generate the text prompt
+        const response = await axios.post('/api/generate', formData);
+  
+        const description = response.data.description;
+  
+        // Display the generated description
+        setDescription(description);
+      } catch (error) {
+        console.error(error);
+      } finally {
         setIsLoading(false);
-      }, 1000); // 1 second delay
-      const imageDataUrl = reader.result;
-      setSelectedImage(imageDataUrl);
+      }
     };
     reader.readAsDataURL(file);
   };
@@ -140,29 +159,27 @@ export default function Generate() {
                       onChange={handleImageUpload}
                       className='w-full sm:w-10/12'
                   />
-                  {/* <div className='w-px h-8 border-2'></div>
-
-                  <button onClick={handleCameraCapture} className='w-full sm:w-1/2'>Take a Photo</button> */}
               </div>
             
             
           </div>
-          <div className="flex flex-col border-2 m-4 p-8">Others</div>
-        </div>
-        <div className="flex flex-col border-2 m-4 p-8">
+          <div className="flex flex-col border-2 m-4 p-8">{description}</div>
+          <div className="flex flex-col border-2 m-4 p-8 text-center">
             <div id="generatedText">
-                It changed again, oh my god!
+              Unleash Your Senses! Audex revolutionizes your reality with hyper immersive audio experiences, taking you on a captivating journey beyond imagination
             </div>
-          <button onClick={handleAudioButton}>Convert to Speech</button>
-          <audio ref={audioRef} src='/media/output.mp3'/>
-            {/* {audioUrl && (
-            <audio controls>
-              <source src={audioUrl} type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-          )} */}
-          <button onClick={play}>Play</button>
+            <button onClick={handleAudioButton}>Convert to Speech</button>
+            <audio ref={audioRef} src='/media/output.mp3'/>
+              {/* {audioUrl && (
+              <audio controls>
+                <source src={audioUrl} type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            )} */}
+            <button onClick={play}>Play</button>
+          </div>
         </div>
+        
       </div>
     </div>
     
