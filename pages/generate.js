@@ -131,6 +131,19 @@ export default function Generate() {
                       </div>
                   )}
 
+                  {!isLoading && !selectedImage && (
+                      <div className="flex justify-center items-center">
+                          <div className="w-70 sm:w-80 md:w-96">
+                          <Image
+                              src={placeholder}
+                              alt="Placeholder"
+                              width={800}
+                              height={600}
+                              className="w-full"
+                          />
+                          </div>
+                      </div>
+                  )}  
                         
               </div>
 
