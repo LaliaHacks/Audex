@@ -109,10 +109,10 @@ export default function Generate() {
         <div className="flex flex-col justify-items-center w-full sm:w-3/5 mt-24">
           <div className="flex flex-col border-2 m-4 p-8">
             <div className="text-3xl font-medium pb-8">
-              Maximize Your Productivity
+              Upload an image!
             </div>
             <div className="font-inter">
-              This is just some sample text lorem ipsum stuff
+              Images of popular tourist destinations result in the best descriptions. But feel free to upload any image you want!
             </div>
           </div>
           <div className="flex flex-col m-4 p-6 items-center">
@@ -143,7 +143,8 @@ export default function Generate() {
                           />
                           </div>
                       </div>
-                  )}       
+                  )}  
+                        
               </div>
 
               {isLoading && (
@@ -163,12 +164,11 @@ export default function Generate() {
             
             
           </div>
-          <div className="flex flex-col border-2 m-4 p-8">{description}</div>
-          <div className="flex flex-col border-2 m-4 p-8 text-center">
-            <div id="generatedText">
-              Unleash Your Senses! Audex revolutionizes your reality with hyper immersive audio experiences, taking you on a captivating journey beyond imagination
+
+          <div className="flex flex-col m-4 p-8 text-center">
+            <div id="generatedText" className='text-justify'>
+              
             </div>
-            <button onClick={handleAudioButton}>Convert to Speech</button>
             <audio ref={audioRef} src='/media/output.mp3'/>
               {/* {audioUrl && (
               <audio controls>
@@ -176,7 +176,7 @@ export default function Generate() {
                 Your browser does not support the audio element.
               </audio>
             )} */}
-            <button onClick={play}>Play</button>
+            <button onClick={play} className='inline-block px-6 py-3 m-16 rounded-full border-2 border-primary hover:border-secondary text-center tracking-wider text-base sm:text-lg'>Play</button>
           </div>
         </div>
         
