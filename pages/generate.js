@@ -86,7 +86,7 @@ export default function Generate() {
       </Head>
       
       <div className="flex flex-col items-center">
-        <header className="flex flex-row justify-between fixed top-0 z-50 w-full p-4 sm:p-8 bg-[#080808]">
+        <header className="flex flex-row justify-between fixed top-0 z-50 w-full p-4 sm:p-8 bg-[#080808] items-center">
           <Link href="/landing">
             <Image
                 className="ml-4 w-24 sm:w-32 object-contain"
