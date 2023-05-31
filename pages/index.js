@@ -111,7 +111,7 @@ export default function Landing() {
         </div>
 
         <Image
-          className="ml-4 w-fit object-contain mt-32"
+          className="w-fit object-contain mt-32"
           alt="Audex Logo"
           src="/12.png"
           width={500}
