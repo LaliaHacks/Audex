@@ -13,7 +13,7 @@ export default function Landing() {
       <main className='flex flex-col items-center'>
       
       <header className="flex flex-row justify-between fixed top-0 z-50 w-full p-4 sm:p-8 bg-[#080808] items-center">
-        <Link href="/landing">
+        <Link href="/">
           <Image
               className="ml-4 w-24 sm:w-32 object-contain"
               alt="Audex Logo"
@@ -24,7 +24,7 @@ export default function Landing() {
         </Link>    
         
         <div className="flex flex-row gap-5 sm:gap-20 mr-2 sm:mr-40 items-center">
-          <Link href="/landing" className='hover:text-primary'>
+          <Link href="/" className='hover:text-primary'>
             Home
           </Link>
           <Link href="/generate" className='hover:border-secondary border-primary border-2 rounded-3xl px-4 py-1 align-middle'>
@@ -101,21 +101,22 @@ export default function Landing() {
             GET STARTED FOR FREE
           </Link>
         </div>
-
-        <div className='text-base sm:text-xl p-8 sm:p-8 font-light text-center italic text-[#B7B7B9] mt-20 tracking-wider'>
-          Feel the place, breathe the place
-        </div>
       </div>
       
       </main>
 
-      <footer className='flex justify-center'>
+      <footer className='flex flex-col justify-center overflow-x-hidden'>
+        <div className='text-base sm:text-xl p-8 sm:p-8 font-light text-center italic text-[#B7B7B9] mt-20 tracking-wider'>
+          Breathe the Moment • Feel the World • Live the Experience 
+        </div>
+
         <Image
-          className="ml-4 w-full object-contain"
+          className="ml-4 w-fit object-contain mt-32"
           alt="Audex Logo"
-          src="/69.png"
+          src="/12.png"
           width={500}
           height={500}
+          unoptimized
         />
       </footer>
     </div>
