@@ -114,7 +114,7 @@ export default function Generate() {
             </div>
             <div className='flex justify-center'>
               <div className='text-base sm:text-lg pb-8 w-11/12 sm:w-10/12 text-sub p-2 sm:p-8'>
-                Images of popular tourist destinations result in the best experience. Try taking a photo and uploading it here!
+                Images of popular tourist destinations produces the best experience. Try taking a photo and uploading it here!
               </div>
             </div>
           </div>
