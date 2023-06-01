@@ -107,15 +107,18 @@ export default function Generate() {
             </Link>
           </div>
         </header>
-        <div className="flex flex-col justify-items-center w-full sm:w-3/5 mt-24">
-          <div className="flex flex-col border-2 m-4 p-8">
-            <div className="text-3xl font-medium pb-8">
-              Upload an image!
+        <div className="flex flex-col justify-items-center w-full sm:w-3/5 mt-24 sm:mt-28">
+          <div className='flex flex-col text-center justify-items-center'>
+            <div className='text-3xl sm:text-3xl p-8 sm:p-8 font-medium'>
+              Upload an image
             </div>
-            <div className="font-inter text-sub">
-              Images of popular tourist destinations result in the best descriptions. But feel free to upload any image you want!
+            <div className='flex justify-center'>
+              <div className='text-base sm:text-lg pb-8 w-11/12 sm:w-10/12 text-sub p-2 sm:p-8'>
+                Images of popular tourist destinations result in the best experience. Try taking a photo and uploading it here!
+              </div>
             </div>
           </div>
+
           <div className="flex flex-col m-4 p-6 items-center">
               <div className="mt-4 flex justify-center items-center">
                   {!isLoading && selectedImage && (
