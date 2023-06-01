@@ -1,10 +1,10 @@
 # Audex: Immerse yourself anywhere
 
-<center>
+<div align="center">
   <img src="./public/mainIcon.png" alt="Audex Main Icon" width="280">
-</center>
+</div>
 
-<center>Enhancing the human experience with an extra dimension of audio sensory stimulation</center>
+<div align="center">Enhancing the human experience with an extra dimension of audio sensory stimulation</div>
 
 <p align="center">
   <a href="https://audex.vercel.app">Live Demo</a>
