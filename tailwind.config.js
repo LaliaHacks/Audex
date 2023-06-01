@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         primary: '#FB2576',
         secondary: '#2F58CD',
+        sub: '#B7B7B9',
       },
       textColor: {
         'default': '#ffffff',

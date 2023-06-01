@@ -112,7 +112,7 @@ export default function Generate() {
             <div className="text-3xl font-medium pb-8">
               Upload an image!
             </div>
-            <div className="font-inter">
+            <div className="font-inter text-sub">
               Images of popular tourist destinations result in the best descriptions. But feel free to upload any image you want!
             </div>
           </div>
@@ -181,7 +181,7 @@ export default function Generate() {
 
             <div className="flex justify-center">
               <div className="max-w-min flex items-center">
-                <button onClick={play} className="inline-flex items-center py-4 px-8 m-16 rounded-full border-2 border-primary hover:border-secondary text-center tracking-wider text-xl sm:text-2xl">
+                <button onClick={play} className="inline-flex items-center py-4 px-8 rounded-full border-2 border-primary hover:border-secondary text-center tracking-wider text-xl sm:text-2xl">
                   <MdOutlinePlayCircle className="mr-2" />
                   Play
                 </button>
@@ -193,7 +193,7 @@ export default function Generate() {
         
       </div>
       <footer className='flex flex-col justify-center overflow-x-hidden'>
-        <div className='text-base sm:text-xl p-8 sm:p-8 font-light text-center italic text-[#B7B7B9] mt-20 tracking-wider'>
+        <div className='text-base sm:text-xl p-8 sm:p-8 font-light text-center italic text-sub mt-20 tracking-wider'>
           Breathe the Moment • Feel the World • Live the Experience 
         </div>
 

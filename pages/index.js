@@ -39,19 +39,19 @@ export default function Landing() {
             Immerse yourself anywhere
           </div>
           <div className='flex justify-center'>
-            <div className='text-base sm:text-xl pb-8 sm:w-8/12 text-[#B7B7B9] p-2 sm:p-8'>
+            <div className='text-base sm:text-xl pb-8 sm:w-8/12 text-sub p-2 sm:p-8'>
               Enhancing the human experience with extra dimension of audio sensory stimulation
             </div>
           </div>
         </div>
 
         <div className="grid place-content-center py-4">
-          <Image alt="Audex Logo" src="/5.png" width={300} height={150} className='max-w-screen-lg'/>
+          <Image alt="Audex Logo" src="/5.png" width={320} height={150} className='max-w-screen-lg'/>
         </div>
 
-        <div className="place-content-center pt-10 p-6">
-          <h1 className="text-2xl font-medium">Welcome to Audex: Revolutionizing Travel Experiences</h1>
-          <p className="pt-4 text-justify">Experience the world like never before with Audex (Audio Experience), a groundbreaking web app that transports you on a hyper-immersive journey from anywhere in the world. Audex is designed to enhance your travel adventures by providing a captivating audio experience that accompanies the sights you encounter along the way.</p>
+        <div className="place-content-center pt-10 p-6 sm:p-20">
+          <h1 className="text-2xl font-medium">Welcome to Audex: Revolutionising Travel Experiences</h1>
+          <p className="pt-4 text-justify text-sub">Experience the world like never before with Audex (Audio Experience), a groundbreaking web app that transports you on a hyper-immersive journey from anywhere in the world. Audex is designed to enhance your travel adventures by providing a captivating audio experience that accompanies the sights you encounter along the way.</p>
 
           <div className='flex justify-center py-12 mt-8'>
             <Image
@@ -65,7 +65,7 @@ export default function Landing() {
 
           <div className='py-12'>
             <h1 className="pt-10 text-2xl font-medium">Immersive Audio Delivered in Two Components</h1>
-            <div className='text-[#B7B7B9]'>
+            <div className='text-sub'>
               <p className="pt-4 text-justify">Audex offers a truly unique audio experience that consists of two components, meticulously crafted to provide an unforgettable journey:</p>
               <ul className=" text-sm list-decimal pt-2 pl-8">
                 <li className='font-medium'>Real-Time Descriptions by Advanced Language Models:</li>
@@ -78,12 +78,12 @@ export default function Landing() {
 
           <div className='py-12'>
             <h1 className=" pt-10 text-2xl font-medium">Who Can Benefit from Audex?</h1>
-            <p className='pt-4 text-justify text-[#B7B7B9]'>Audex was created with a vision to amplify the experiences of all travelers, and we're particularly dedicated to supporting the visually impaired community. Our user interface has been thoughtfully designed to be minimalistic and user-friendly, ensuring easy navigation and a seamless experience for everyone. We believe that Audex can truly enrich the adventures of those seeking multi-dimensional travel experiences.</p>
+            <p className='pt-4 text-justify text-sub'>Audex was created with a vision to amplify the experiences of all travelers, and we're particularly dedicated to supporting the visually impaired community. Our user interface has been thoughtfully designed to be minimalistic and user-friendly, ensuring easy navigation and a seamless experience for everyone. We believe that Audex can truly enrich the adventures of those seeking multi-dimensional travel experiences.</p>
           </div>
 
           <div className='py-12'>
             <h1 className=" pt-10 text-2xl font-medium">How to Harness the Power of Audex?</h1>
-            <div className='text-[#B7B7B9]'>
+            <div className='text-sub'>
               <p className='pt-4 text-justify' >Getting started with Audex is a breeze! Follow these simple steps to embark on your extraordinary audio journey:</p>
               <ul className="text-justify text-sm list-decimal py-2 pl-8">
                 <li>Click on the "GET STARTED" button below, granting you access to Audex's transformative features.</li>
@@ -106,7 +106,7 @@ export default function Landing() {
       </main>
 
       <footer className='flex flex-col justify-center overflow-x-hidden'>
-        <div className='text-base sm:text-xl p-8 sm:p-8 font-light text-center italic text-[#B7B7B9] mt-20 tracking-wider'>
+        <div className='text-base sm:text-xl p-8 sm:p-8 font-light text-center italic text-sub mt-20 tracking-wider'>
           Breathe the Moment • Feel the World • Live the Experience 
         </div>
 
