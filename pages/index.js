@@ -40,7 +40,7 @@ export default function Landing() {
           </div>
           <div className='flex justify-center'>
             <div className='text-base sm:text-xl pb-8 sm:w-8/12 text-sub p-2 sm:p-8'>
-              Enhancing the human experience with extra dimension of audio sensory stimulation
+              Enhancing the human experience with an extra dimension of audio sensory stimulation
             </div>
           </div>
         </div>
