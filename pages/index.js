@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { HiSparkles } from 'react-icons/hi2';
 
 export default function Landing() {
   return (
@@ -51,11 +52,12 @@ export default function Landing() {
 
         <div className="place-content-center pt-10 p-6 sm:p-20">
           <h1 className="text-2xl font-medium">Welcome to Audex: Revolutionising Leisure Experiences</h1>
-          <p className="pt-4 text-justify text-sub">Experience the world like never before. We believe that outings and vacations
+          <p className="pt-4 text-justify text-sub text-sm sm:text-base">Experience the world like never before. We believe that outings and vacations
           are more than just moments of leisure. They are opportunities for personal growth, discovery, and transformation. 
-          Our groundbreaking software 
-          takes you on a hyper-immersive adventure anytime, anywhere. Audex is designed to enhance your travel adventures 
-          by providing a captivating audio experience that accompanies the sights you encounter along the way. 
+          Our mission is to revolutionize the way you connect with the world with the power of AI. <br/><br/>
+
+          <span className='text-primary'>Audex</span> delivers a hyper-immersive experience that will elevate your travel adventures into a multi-dimensional journey.
+          We make this possible with captivating audio experiences that accompanies the sights you encounter along the way. 
           Explore and engage with your surroundings in a profound and meaningful way with Audex today.</p>
 
           <div className='flex justify-center py-12 mt-8'>
@@ -68,8 +70,20 @@ export default function Landing() {
             />
           </div>
 
+          <div className='text-base sm:base p-8 font-light text-center italic text-sub tracking-wider lg:mx-16 sm:mx-8'>
+            Groundbreaking software that takes you on a hyper-immersive adventure anytime, anywhere.
+          </div>
+
           <div className='py-12'>
-            <h1 className="pt-10 text-2xl font-medium">Immersive Audio Delivered in Two Components</h1>
+            <h1 className=" pt-10 text-2xl font-medium">Who Can Benefit from Audex?</h1>
+            <p className='pt-4 text-justify text-sub text-sm sm:text-base'>Audex was created with a vision to amplify the experiences of all travelers, and we're particularly dedicated to supporting the visually impaired community. Our user interface has been thoughtfully designed to be minimalistic and user-friendly, ensuring easy navigation and a seamless experience for everyone. We believe that Audex can truly enrich the adventures of those seeking multi-dimensional travel experiences.</p>
+          </div>
+
+          <div className='py-12'>
+            <div className='flex flex-row justify-start items-end'>
+              <HiSparkles className='hidden sm:block text-4xl text-primary mr-3'/>
+              <h1 className="pt-10 text-2xl font-medium">AI-powered Immersive Audio</h1>
+            </div>
             <div className='text-sub'>
               <p className="pt-4 text-justify">Audex offers a truly unique audio experience that consists of two components, meticulously crafted to provide an unforgettable journey:</p>
               <ul className=" text-sm list-decimal pt-2 pl-8">
@@ -81,9 +95,8 @@ export default function Landing() {
             </div>
           </div>
 
-          <div className='py-12'>
-            <h1 className=" pt-10 text-2xl font-medium">Who Can Benefit from Audex?</h1>
-            <p className='pt-4 text-justify text-sub'>Audex was created with a vision to amplify the experiences of all travelers, and we're particularly dedicated to supporting the visually impaired community. Our user interface has been thoughtfully designed to be minimalistic and user-friendly, ensuring easy navigation and a seamless experience for everyone. We believe that Audex can truly enrich the adventures of those seeking multi-dimensional travel experiences.</p>
+          <div className='text-base sm:base p-8 font-light text-center italic text-sub tracking-wider'>
+            Transforming Every Experience into a Soothing Museum Narration with AI
           </div>
 
           <div className='py-12'>
