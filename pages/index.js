@@ -50,8 +50,13 @@ export default function Landing() {
         </div>
 
         <div className="place-content-center pt-10 p-6 sm:p-20">
-          <h1 className="text-2xl font-medium">Welcome to Audex: Revolutionising Travel Experiences</h1>
-          <p className="pt-4 text-justify text-sub">Experience the world like never before with Audex (Audio Experience), a groundbreaking web app that transports you on a hyper-immersive journey from anywhere in the world. Audex is designed to enhance your travel adventures by providing a captivating audio experience that accompanies the sights you encounter along the way.</p>
+          <h1 className="text-2xl font-medium">Welcome to Audex: Revolutionising Leisure Experiences</h1>
+          <p className="pt-4 text-justify text-sub">Experience the world like never before. We believe that outings and vacations
+          are more than just moments of leisure. They are opportunities for personal growth, discovery, and transformation. 
+          Our groundbreaking software 
+          takes you on a hyper-immersive adventure anytime, anywhere. Audex is designed to enhance your travel adventures 
+          by providing a captivating audio experience that accompanies the sights you encounter along the way. 
+          Explore and engage with your surroundings in a profound and meaningful way with Audex today.</p>
 
           <div className='flex justify-center py-12 mt-8'>
             <Image
