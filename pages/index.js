@@ -70,7 +70,7 @@ export default function Landing() {
             />
           </div>
 
-          <div className='text-base sm:base p-8 font-light text-center italic text-sub tracking-wider lg:mx-16 sm:mx-8'>
+          <div className='text-base sm:base p-8 font-light text-center italic text-sub tracking-wider lg:mx-24 sm:mx-8'>
             Groundbreaking software that takes you on a hyper-immersive adventure anytime, anywhere.
           </div>
 
@@ -95,7 +95,7 @@ export default function Landing() {
             </div>
           </div>
 
-          <div className='text-base sm:base p-8 font-light text-center italic text-sub tracking-wider'>
+          <div className='text-base sm:base py-8 sm:p-8 font-light text-center italic text-sub tracking-wider'>
             Transforming Every Experience into a Soothing Museum Narration with AI
           </div>
 
